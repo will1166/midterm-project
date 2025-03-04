@@ -115,7 +115,7 @@ ul > li:nth-child(3){
     align-items: center;
     padding: 40px;
     gap: 30px;
-    font-weight: bolder;
+    font-weight: var(--text-bolder);
 }
 
 #planets div{
