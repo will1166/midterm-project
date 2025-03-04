@@ -1,10 +1,15 @@
 :root{
     --font-header: 'Playfair Display', sans-serif;
     --font-text: 'Lato', sans-serif;
+    --button-blue: steelblue;
+    --radius-button: 10px;
+    --width-button: 90px;
 }
 
 html {
     font-family: var(--font-text);
+    color:white;
+    background-color: black;
 }
 
 .wrapper{
@@ -14,6 +19,8 @@ html {
 
 h1{
     font-family: var(--font-header);
+    padding: 10px;
+    text-transform: uppercase;
 }
 
 header{
@@ -24,4 +31,12 @@ nav ul{
     display: flex;
     justify-content: space-around;
     list-style: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+ul li:nth-child(3){
+    background-color: var(--button-blue);
+    border-radius: 10px;
+    width: var(--width-button);
 }
