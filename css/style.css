@@ -7,7 +7,7 @@
     --radius-button: 10px;
     --width-button: 90px;
     --text-upper: uppercase;
-    --text-bolder: bolder;
+    --text-bolder: 900;
     --hover-green: #99ffcc;
 }
 
@@ -106,3 +106,12 @@ ul > li:nth-child(3){
     background-color: var(--purple-color);
 }
 
+footer > hr{
+    margin-bottom: 30px;
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: var(--text-bolder);
+}
