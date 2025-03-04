@@ -4,6 +4,7 @@
     --button-blue: steelblue;
     --radius-button: 10px;
     --width-button: 90px;
+    --text-upper: uppercase;
 }
 
 html {
@@ -20,7 +21,7 @@ html {
 h1{
     font-family: var(--font-header);
     padding: 10px;
-    text-transform: uppercase;
+    text-transform: var(--text-upper);
 }
 
 header{
@@ -44,5 +45,19 @@ ul li:nth-child(3){
 #solarSystem{
     background-image: url(../images/milky-way.jpg);
     background-size: cover;
-    height: 600px;
+    background-position: center;
+    height: 400px;
+    text-align: center;
+}
+
+#solarSystem > h2, 
+#solarSystem > p{
+    position: relative;
+    top: 200px;
+    padding: 0 50px 0 50px;
+}
+
+#solarSystem > p:nth-child(1){
+    text-transform: var(--text-upper);
+    padding-bottom: 5px;
 }
