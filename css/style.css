@@ -1,10 +1,12 @@
 :root{
     --font-header: 'Playfair Display', sans-serif;
     --font-text: 'Lato', sans-serif;
-    --button-blue: steelblue;
+    --blue-color: #0065a8;
+    --purple-color: #90105f;
     --radius-button: 10px;
     --width-button: 90px;
     --text-upper: uppercase;
+    --text-bolder: bolder;
 }
 
 html{
@@ -33,11 +35,11 @@ nav > ul{
     justify-content: space-around;
     list-style: none;
     padding: 10px;
-    font-weight: bold;
+    font-weight: var(--text-bolder);
 }
 
 ul > li:nth-child(3){
-    background-color: var(--button-blue);
+    background-color: var(--blue-color);
     border-radius: 10px;
     width: var(--width-button);
 }
@@ -67,7 +69,8 @@ ul > li:nth-child(3){
 }
 
 .highlight{
-    color: var(--button-blue);
+    color: var(--blue-color);
+    font-weight: bolder;
 }
 
 #planets{
@@ -75,4 +78,8 @@ ul > li:nth-child(3){
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+}
+
+#planets > h3{
 }
