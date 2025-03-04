@@ -32,6 +32,18 @@ header{
     text-align: center;
 }
 
+.rectangle {
+    position: relative;
+    display: inline-block;
+}
+
+.rect {
+    position: absolute; 
+    top: 40%;
+    z-index: -1; 
+}
+
+
 nav > ul{
     display: flex;
     justify-content: space-around;
