@@ -65,6 +65,7 @@ ul > li:nth-child(3){
     background-position: center;
     height: 400px;
     text-align: center;
+    box-shadow: 0 0 20px 20px rgb(235, 231, 162, 0.1);
 }
 
 #solarSystem > h2, 
