@@ -83,3 +83,13 @@ ul > li:nth-child(3){
     padding: 40px;
     gap: 30px;
 }
+
+#planets > button {
+    background-color: var(--blue-color);
+    color: white;
+    border-radius: var(--radius-button);
+}
+
+#planets > button:nth-child(1){
+    background-color: var(--purple-color);
+}
