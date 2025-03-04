@@ -61,3 +61,7 @@ ul li:nth-child(3){
     text-transform: var(--text-upper);
     padding-bottom: 5px;
 }
+
+.highlight{
+    color: var(--button-blue);
+}
