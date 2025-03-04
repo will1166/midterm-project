@@ -65,7 +65,7 @@ ul > li:nth-child(3){
     background-position: center;
     height: 400px;
     text-align: center;
-    box-shadow: 0 0 20px 20px rgb(235, 231, 162, 0.1);
+    box-shadow: 0 0 20px 20px rgb(235, 231, 162, 0.);
 }
 
 #solarSystem > h2, 
@@ -87,7 +87,25 @@ ul > li:nth-child(3){
 .highlight{
     background: linear-gradient(to right, #0065a8, #99ffcc);
     background-clip: text;
+    background-size: 200% auto;
     color: transparent;
+    animation-name: solarGradient;
+    animation-delay: 0.5s;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes solarGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 #planets{
