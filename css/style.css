@@ -1,0 +1,12 @@
+:root{
+    --font-header: 'Playfair Display', sans-serif;
+    --font-text: 'Lato', sans-serif;
+}
+
+h1{
+    font-family: var(--font-header);
+}
+
+html {
+    font-family: var(--font-text);
+}
