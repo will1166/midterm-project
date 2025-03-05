@@ -243,4 +243,13 @@ footer > p{
     #solarSystem > p:nth-child(3){
         padding-top: 20px;
     }
+
+    #planets{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #planets > h2{
+        grid-column: 1 / -1;
+        text-align: center;
 }
