@@ -165,6 +165,8 @@ a:focus{
     height: var(--height-button);
     font-size: 1.2rem;
     text-align: center;
+    transition-property: background-color, color, transform;
+    transition-duration: 0.2s;
 }
 
 #planets > div:nth-child(2) a, 
@@ -172,6 +174,12 @@ a:focus{
 #planets > div:nth-child(6) a, 
 #planets > div:nth-child(7) a{
     background-color: var(--purple-color);
+}
+
+#planets div a:hover{
+    background-color: var(--green-hover);
+    color: black;
+    transform: scale(1.2);
 }
 
 footer > hr{
