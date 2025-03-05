@@ -218,3 +218,9 @@ footer{
 footer > p{
     padding-top: 10px;
 }
+
+@media screen and (min-width: 900px) {
+    .wrapper{
+        width: 900px;
+    }
+}
