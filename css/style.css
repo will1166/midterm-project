@@ -274,8 +274,18 @@ footer > p{
     header{
         width: 100%;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+
+    h1{
+        align-self: flex-start;
+    }
+
+    nav{
+        align-self: flex-end;
     }
 
     #planets{
