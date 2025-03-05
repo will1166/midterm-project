@@ -53,15 +53,26 @@ nav > ul{
     font-weight: var(--text-bolder);
 }
 
-ul > li:last-child{
+ul > li:last-child a{
+    display: block;
     background-color: var(--blue-color);
     border-radius: 10px;
     width: var(--width-button);
 }
 
 a:link,
-a:visited,
-a:hover, 
+a:visited{
+    text-decoration: none;
+    color: var(--white-color)
+}
+
+a:hover{
+    background-color: #99ffcc;
+    transition-property: background-color, transform;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+}
+
 a:active{
     text-decoration: none;
     color: var(--white-color)
@@ -79,7 +90,7 @@ a:focus{
     background-position: center;
     height: 400px;
     text-align: center;
-    box-shadow: 0 0 20px 20px rgb(235, 231, 162, 0.);
+    box-shadow: 0 0 15px 15px rgb(235, 231, 162, 0.1);
 }
 
 #solarSystem > h2, 
