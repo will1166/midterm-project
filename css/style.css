@@ -275,10 +275,9 @@ footer > p{
         display: flex;
         flex-direction: row;
     }
-    
+
     #planets{
         display: flex;
         flex-direction: row;
     }
-
 }
