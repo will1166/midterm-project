@@ -8,7 +8,7 @@
     --width-button: 120px;
     --text-upper: uppercase;
     --text-bolder: bolder;
-    --active-red: 10px solid red;
+    --active-red: 5px solid red;
 }
 
 html{
@@ -52,20 +52,20 @@ nav > ul{
     font-weight: var(--text-bolder);
 }
 
-ul > li:nth-child(3){
+ul > li:last-child{
     background-color: var(--blue-color);
     border-radius: 10px;
     width: var(--width-button);
 }
 
 a:link,
-a:visited{
+a:visited,
+a:hover, 
+a:active{
     text-decoration: none;
     color: var(--white-color)
 }
 
-a:hover,
-a:active,
 a:focus{
     text-decoration: none;
     border: var(--active-red);
@@ -139,17 +139,17 @@ a:focus{
     gap: 20px;
 }
 
-#planets div p{
+#planets div a{
     background-color: var(--blue-color);
     border-radius: 10px;
     width: var(--width-button);
     text-align: center;
 }
 
-#planets > div:nth-child(2) button, 
-#planets > div:nth-child(3) button,
-#planets > div:nth-child(6) button, 
-#planets > div:nth-child(7) button{
+#planets > div:nth-child(2) a, 
+#planets > div:nth-child(3) a,
+#planets > div:nth-child(6) a, 
+#planets > div:nth-child(7) a{
     background-color: var(--purple-color);
 }
 
