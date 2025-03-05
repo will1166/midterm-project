@@ -4,6 +4,7 @@
     --blue-color: #0065a8;
     --purple-color: #90105f;
     --white-color: #f5f5f5;
+    --green-hover: #99ffcc;
     --radius-button: 10px;
     --width-button: 120px;
     --height-button: 35px;
@@ -57,6 +58,9 @@ nav > ul a{
     display: block;
     padding: 8px;
     border-radius: 10px;
+    background-color: transparent;
+    transition-property: background-color, color, transform;
+    transition-duration: 0.2s;
 }
 
 ul > li:last-child a{
@@ -70,8 +74,10 @@ a:visited{
     color: var(--white-color)
 }
 
-a:hover{
-
+nav > ul a:hover{
+    background-color: var(--green-hover);
+    color: black;
+    transform: scale(1.2);
 }
 
 a:active{
