@@ -223,4 +223,24 @@ footer > p{
     .wrapper{
         width: 900px;
     }
+
+    #solarSystem > h2, 
+    #solarSystem > p{
+        position: relative;
+        top: 250px;
+        padding: 0 50px 0 50px;
+        text-align: left;
+    }
+
+    #solarSystem > p:nth-child(1){
+        padding-bottom: 10px;
+    }
+
+    #solarSystem > h2 {
+        font-size: 2rem;
+    }
+
+    #solarSystem > p:nth-child(3){
+        padding-top: 20px;
+    }
 }
