@@ -99,6 +99,25 @@ a:focus{
     text-align: center;
     margin: 10px;
     box-shadow: 0 0 15px 15px rgb(235, 231, 162, 0.1);
+    animation: zoomGalaxy 10s linear infinite;
+}
+
+@keyframes zoomGalaxy {
+    0%{
+        background-size: 200%;
+    }
+    25%{
+        background-size: 210%;
+    }
+    50%{
+        background-size: 220%;
+    }
+    75%{
+        background-size: 230%;
+    }
+    100%{
+        background-size: 240%;
+    }
 }
 
 #solarSystem > h2, 
