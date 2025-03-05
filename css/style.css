@@ -224,6 +224,10 @@ footer > p{
         width: 900px;
     }
 
+    #solarSystem{
+        width: 100%;
+    }
+
     #solarSystem > h2, 
     #solarSystem > p{
         position: relative;
