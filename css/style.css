@@ -53,10 +53,14 @@ nav > ul{
     font-weight: var(--text-bolder);
 }
 
-ul > li:last-child a{
+nav > ul a{
     display: block;
-    background-color: var(--blue-color);
+    padding: 8px;
     border-radius: 10px;
+}
+
+ul > li:last-child a{
+    background-color: var(--blue-color);
     width: var(--width-button);
 }
 
@@ -67,10 +71,7 @@ a:visited{
 }
 
 a:hover{
-    background-color: #99ffcc;
-    transition-property: background-color, transform;
-    transition-duration: 0.3s;
-    transform: scale(1.2);
+
 }
 
 a:active{
@@ -90,6 +91,7 @@ a:focus{
     background-position: center;
     height: 400px;
     text-align: center;
+    margin: 10px;
     box-shadow: 0 0 15px 15px rgb(235, 231, 162, 0.1);
 }
 
