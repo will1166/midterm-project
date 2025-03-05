@@ -265,3 +265,20 @@ footer > p{
         grid-column: 1 / -1;
         text-align: center;
 }
+
+@media screen and (min-width: 1400px) {
+    .wrapper{
+        width: 1400px;    
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #planets{
+        display: flex;
+        flex-direction: row;
+    }
+
+}
