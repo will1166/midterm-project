@@ -182,12 +182,14 @@ a:focus{
     transform: scale(1.2);
 }
 
-footer > hr{
-    margin-bottom: 30px;
-}
 
 footer{
+    border-top: 1px white solid;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     font-weight: var(--text-bolder);
+}
+
+footer > p{
+    padding-top: 10px;
 }
