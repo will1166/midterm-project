@@ -288,6 +288,10 @@ footer > p{
         align-self: flex-end;
     }
 
+    nav ul a{
+        margin: 20px;
+    }
+
     #planets{
         display: flex;
         flex-direction: row;
