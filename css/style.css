@@ -219,7 +219,7 @@ footer > p{
     padding-top: 10px;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 900px){
     .wrapper{
         width: 900px;
     }
@@ -286,7 +286,9 @@ footer > p{
     #planets > h2{
         grid-column: 1 / -1;
         text-align: center;
+    }
 }
+
 
 @media screen and (min-width: 1400px) {
     .wrapper{
