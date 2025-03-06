@@ -228,10 +228,32 @@ footer > p{
         width: 100%;
     }
 
+    #solarSystem{
+        height: 450px;
+    }
+    
+    @keyframes zoomGalaxy {
+        0%{
+            background-size: 100%;
+        }
+        25%{
+            background-size: 110%;
+        }
+        50%{
+            background-size: 120%;
+        }
+        75%{
+            background-size: 130%;
+        }
+        100%{
+            background-size: 140%;
+        }
+    }
+
     #solarSystem > h2, 
     #solarSystem > p{
         position: relative;
-        top: 250px;
+        top: 280px;
         padding: 0 50px 0 50px;
         text-align: left;
     }
