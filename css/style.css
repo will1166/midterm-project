@@ -311,4 +311,15 @@ footer > p{
     #planets > div:last-child a{
         background-color: var(--blue-color);
     }
+
+    #planets div a{
+        transition-property: background-color, color, transform;
+        transition-duration: 0.2s;
+    }
+    
+    #planets div a:hover{
+        background-color: var(--green-hover);
+        color: black;
+        transform: scale(1.2);
+    }
 }
