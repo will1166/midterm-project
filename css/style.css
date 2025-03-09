@@ -33,6 +33,7 @@ h1{
 header{
     text-align: center;
     height: 120px;
+    margin-bottom: 10px;
 }
 
 /* adds stripe to h1  */
@@ -97,48 +98,32 @@ a:focus{
 }
 
 #solarSystem{
-    background-image: url(../images/milky-way.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    text-align: center;
-    margin: 10px;
-    box-shadow: 0 0 15px 15px rgb(235, 231, 162, 0.1);
-    animation: zoomGalaxy 10s linear infinite;
-}
-
-@keyframes zoomGalaxy {
-    0%{
-        background-size: 200%;
-    }
-    25%{
-        background-size: 210%;
-    }
-    50%{
-        background-size: 220%;
-    }
-    75%{
-        background-size: 230%;
-    }
-    100%{
-        background-size: 240%;
-    }
-}
-
-#solarSystem > h2, 
-#solarSystem > p{
+    overflow: hidden;
     position: relative;
-    top: 200px;
-    padding: 0 50px 0 50px;
 }
 
-#solarSystem > p:nth-child(1){
-    text-transform: var(--text-upper);
-    padding-bottom: 5px;
+#solarSystem > img{
+    width: 100%;
+    animation: zoomGalaxy 8s infinite ease-in-out alternate;
+    display: block;
 }
 
-#solarSystem > h2{
-    padding-bottom: 10px;
+@keyframes zoomGalaxy{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+
+#solarSystem > .text{
+    position: absolute;
+    bottom: 3%;
+    left: 20px;
+    z-index: 5;
+    color: white;
+    text-align: center;
 }
 
 .highlight{
@@ -222,54 +207,12 @@ footer > p{
         width: 100%;
     }
 
-    #solarSystem{
-        height: 450px;
-    }
-    
-    @keyframes zoomGalaxy {
-        0%{
-            background-size: 100%;
-        }
-        25%{
-            background-size: 110%;
-        }
-        50%{
-            background-size: 120%;
-        }
-        75%{
-            background-size: 130%;
-        }
-        100%{
-            background-size: 140%;
-        }
-    }
-
-    #solarSystem > h2, 
-    #solarSystem > p{
-        position: relative;
-        top: 280px;
-        padding: 0 50px 0 50px;
-        text-align: left;
-    }
-
     header{
         width: 400px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
-    }
-
-    #solarSystem > p:nth-child(1){
-        padding-bottom: 10px;
-    }
-
-    #solarSystem > h2 {
-        font-size: 2rem;
-    }
-
-    #solarSystem > p:nth-child(3){
-        padding-top: 20px;
     }
 
     #planets{
@@ -311,31 +254,6 @@ footer > p{
 
     #solarSystem{
         height: 500px;
-    }
-    
-    @keyframes zoomGalaxy {
-        0%{
-            background-size: 80%;
-        }
-        25%{
-            background-size: 90%;
-        }
-        50%{
-            background-size: 100%;
-        }
-        75%{
-            background-size: 110%;
-        }
-        100%{
-            background-size: 120%;
-        }
-    }
-
-    #solarSystem > h2, 
-    #solarSystem > p{
-        position: relative;
-        top: 320px;
-        padding: 0 50px 0 50px;
     }
 
     #planets{
