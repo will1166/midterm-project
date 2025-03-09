@@ -142,26 +142,20 @@ a:focus{
 }
 
 .highlight{
-    background: linear-gradient(to right, #0065a8, #99ffcc);
-    background-clip: text;
-    background-size: 200% auto;
-    color: transparent;
-    animation-name: solarGradient;
-    animation-delay: 0.5s;
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    background: linear-gradient(90deg, blue, rgb(0, 255, 255)); 
+    background-size: 200% 100%; 
+    background-position: 0% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: solarGradient 3s infinite alternate; 
 }
 
 @keyframes solarGradient {
-    0% {
-        background-position: 0% 50%;
+    from {
+        background-position: 0% 0%;
     }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
+    to {
+        background-position: 100% 0%;
     }
 }
 
