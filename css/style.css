@@ -52,6 +52,7 @@ header{
     z-index: -1; 
 }
 
+/* create nav bar */
 nav > ul{
     display: flex;
     justify-content: space-between;
@@ -74,12 +75,14 @@ ul > li:last-child a{
     width: var(--width-button);
 }
 
+/* customize links */
 a:link,
 a:visited{
     text-decoration: none;
     color: var(--white-color)
 }
 
+/* decorate hover for accessibility */
 nav > ul a:hover{
     background-color: var(--green-hover);
     color: black;
@@ -100,10 +103,15 @@ a:focus{
 #solarSystem{
     overflow: hidden;
     position: relative;
+    height: 500px;
+    box-shadow: 0 0 15px 15px rgb(235, 231, 162, 0.1);
+
 }
 
 #solarSystem > img{
     width: 100%;
+    height: 100%;
+    object-fit: cover; /* make the image not distorted */
     animation: zoomGalaxy 8s infinite ease-in-out alternate;
     display: block;
 }
@@ -119,11 +127,25 @@ a:focus{
 
 #solarSystem > .text{
     position: absolute;
-    bottom: 3%;
+    top: 250px;
     left: 20px;
-    z-index: 5;
+    z-index: 1;
     color: white;
     text-align: center;
+}
+
+/* make the text similar to the example */
+#solarSystem > .text > p:nth-child(1){
+    text-transform: uppercase;
+}
+
+#solarSystem > .text > h2{
+    padding: 10px;
+    font-size: 2rem;
+}
+
+#solarSystem > .text > p:nth-child(3){
+    padding: 10px;
 }
 
 .highlight{
