@@ -222,10 +222,6 @@ footer > p{
 
 @media screen and (min-width: 900px){
     .wrapper{
-        width: 900px;
-    }
-
-    #solarSystem{
         width: 100%;
     }
 
@@ -235,6 +231,25 @@ footer > p{
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    #solarSystem > .text{
+        top: 320px;
+        left: 40px;
+        text-align: left;
+    }
+    
+    #solarSystem > .text > p:nth-child(1){
+        text-transform: uppercase;
+    }
+    
+    #solarSystem > .text > h2{
+        padding-left: 0;
+    }
+    
+    #solarSystem > .text > p:nth-child(3){
+        padding: 0;
     }
 
     #planets{
@@ -251,7 +266,7 @@ footer > p{
 
 @media screen and (min-width: 1400px) {
     .wrapper{
-        width: 1400px;    
+        width: 100%;    
     }
 
     header{
