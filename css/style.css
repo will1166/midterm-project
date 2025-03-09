@@ -35,20 +35,19 @@ header{
     height: 120px;
 }
 
+/* adds stripe to h1  */
 .rectangle{
     position: relative;
-    display: inline-block;
-    z-index: 0;
 }
 
 .rectangle::after{
     content: "";
     position: absolute;
     background-color: #0065a8;
-    width: 110%;
-    left: -6px;
-    height: 15px;
-    bottom: 15px;
+    width: 100%;
+    right: 0;
+    height: 10px;
+    bottom: 10px;
     z-index: -1; 
 }
 
