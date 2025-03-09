@@ -240,16 +240,12 @@ footer > p{
         text-align: left;
     }
     
-    #solarSystem > .text > p:nth-child(1){
-        text-transform: uppercase;
-    }
-    
     #solarSystem > .text > h2{
         padding-left: 0;
     }
     
     #solarSystem > .text > p:nth-child(3){
-        padding: 0;
+        padding-left: 0;
     }
 
     #planets{
@@ -275,6 +271,7 @@ footer > p{
         flex-direction: column;
         justify-content: space-around;
         flex-wrap: wrap;
+        margin-bottom: 0;
     }
 
     h1{
@@ -287,6 +284,19 @@ footer > p{
 
     nav ul a{
         margin: 20px 0 20px 20px;
+    }
+
+    /* adds border-radius to desktop image */
+    #solarSystem{
+        border-radius: 30px;
+    }
+
+    #solarSystem > .text > h2{
+        padding-left: 0;
+    }
+    
+    #solarSystem > .text > p:nth-child(3){
+        padding-left: 0;
     }
 
     #planets{
