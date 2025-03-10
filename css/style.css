@@ -219,7 +219,7 @@ a:focus{
 
 /* make the footer thinner ans spaced */
 footer{
-    border-top: 1px var(--white-color) dotted;
+    border-top: 1px var(--white-color) solid;
     text-align: center;
     margin-top: 20px;
     font-weight: var(--text-bolder);
